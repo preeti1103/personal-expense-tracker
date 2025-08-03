@@ -1,0 +1,167 @@
+:root {
+    --primary: #4361ee;
+    --secondary: #3f37c9;
+    --accent: #4cc9f0;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --danger: #f72585;
+    --success: #4ad66d;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.left-panel,
+.right-panel {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.left-panel {
+    flex: 1;
+}
+
+.right-panel {
+    width: 400px;
+}
+
+.expense-form {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(67, 97, 238, 0.2);
+}
+
+button[type="submit"] {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: var(--secondary);
+}
+
+.expense-list {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+th {
+    background: var(--light);
+    color: var(--dark);
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.delete-btn {
+    background: var(--danger);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.delete-btn:hover {
+    opacity: 0.9;
+}
+
+.summary-chart {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.chart-section {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.chart-section h3 {
+    color: var(--dark);
+    margin-top: 0;
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+button,
+.delete-btn {
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+table tr {
+    transition: background 0.2s;
+}
+
+table tr:hover {
+    background: rgba(67, 97, 238, 0.05);
+}
